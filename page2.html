@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="function.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("joshuaancuna21@gmail.com"); // Replace with your EmailJS user ID
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Wang</a>
+    
+        
+        <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+    
+        
+        <nav class="sidebar" id="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+            <ul>
+                <li><a href="index.html">Back to Page1</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#animal">My Pets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Banner">
+        <img src="images/Quotes.png" alt="oogway">
+    </div>
+    <section class="hobby" id="hobbies">
+        <div class="hobby-img">
+            <img src="images/hobbies.jpg" alt="Hobbies">
+        </div>
+        <div class="hobby-content">
+            <h2 class="heading">Hobbies</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+    <section class="pet" id="pets">
+        <div class="pet-content">
+            <h2 class="heading">My Pets</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="pet-img">
+            <img src="images/pets.jpg" alt="Pets">
+        </div>
+    </section>
+    <section class="Feedback">
+        <div class="feedback-form">
+            <h2>Feedback Form</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="e34595b9-07a1-412c-a96a-1a6785311d8b">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="comments">Comments about my blog:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="Contact" id="contact">
+        <div class="Contact-content">
+            <h1>Contact Me</h1>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100085565631874&mibextid=ZbWKwL"><i class='bx bxl-facebook' ></i></a>
+                <a href="http://instagram.com/_u/hjossshhh_/"><i class='bx bxl-instagram' ></i></a>
+                <a href="mailto:joshuaancuna21@gmail.com? subject= subject text"><i class='bx bx-envelope' ></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
